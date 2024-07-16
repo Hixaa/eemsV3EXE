@@ -1,5 +1,17 @@
 #!/bin/bash
 
+echo "[+] Deleting eemsv2 folder"
+sudo rm -r eemsv2/
+
+echo "[+] Deleting project files and folders from root directory"
+cd /
+sudo rm -r  /components /errors 
+sudo rm -f config_xaees.ini cleanup.sh xaees_main.py
+
+echo "[+] Deleting xaees service file"
+sudo rm -f lib/systemd/system/xaees.service
+cd ~
+
 echo "[+] Cloning the source"
 git clone https://github.com/Hixaa/eemsV3EXE
 cd eemsV3EXE
