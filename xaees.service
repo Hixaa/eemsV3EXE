@@ -1,0 +1,13 @@
+[Unit]
+Description=xaees 
+After=network.target
+
+[Service]
+Type=simple
+Environment=PYTHONUNBUFFERED=1
+#ExecStartPre=/cleanup.sh
+ExecStart=sudo /RakshaIOTeemsV3
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
