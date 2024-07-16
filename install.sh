@@ -45,7 +45,7 @@ pip3 install chardet
 sudo mv RakshaIOTeemsV3 /
 sudo chmod 777 /RakshaIOTeemsV3
 sudo mv config_xaees.ini /
-sudo mv xaees/xaees.service /lib/systemd/system/
+sudo mv xaees.service /lib/systemd/system/
 #sudo cp -r xaees/* /
 
 echo "[+] Creating data storage folder"
